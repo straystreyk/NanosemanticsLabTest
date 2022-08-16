@@ -1,0 +1,53 @@
+@import "../../../variables";
+
+.area {
+  height: 100%;
+  padding: 20px;
+  overflow: scroll;
+}
+
+.messageWrapper {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.messageContentBot {
+  background: $accentColor;
+  max-width: 30%;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.messageContentUser {
+  max-width: 30%;
+  padding: 20px;
+  border-radius: 5px;
+  background: #23242c;
+}
+
+.messageWrapperBot {
+  align-items: flex-start;
+}
+
+.name {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.messageWrapperUser {
+  align-items: flex-end;
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  .messageWrapper {
+    margin-top: 10px;
+  }
+
+  .messageContentUser,
+  .messageContentBot {
+    width: 100%;
+    max-width: unset;
+  }
+}

@@ -1,0 +1,33 @@
+@import "../../../variables";
+
+.widgetInput {
+  border: none;
+  border-radius: 5px 0 0 5px;
+  padding: 15px 15px;
+  width: 100%;
+  background: #23242c;
+  color: #fff;
+  &:focus {
+    outline: none;
+  }
+}
+
+.widgetForm {
+  display: flex;
+  margin: 10px;
+  & button {
+    background: none;
+    min-width: 15%;
+    flex-shrink: 0;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background: $accentColor;
+    text-transform: uppercase;
+    transition: 0.35s all ease;
+    border-radius: 0 5px 5px 0;
+    &:hover {
+      background: $accentHover;
+    }
+  }
+}

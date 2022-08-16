@@ -1,0 +1,16 @@
+.reset {
+  margin-bottom: 30px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+
+  &:hover .icon {
+    transform: rotate(360deg);
+  }
+}
+
+.icon {
+  width: 20px;
+  margin-left: 10px;
+  transition: 0.35s all ease;
+}
