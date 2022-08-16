@@ -70,14 +70,12 @@ module.exports = {
       {
         test: /\.s?css$/,
         use: [
-          isDev
-            ? "style-loader"
-            : {
-                loader: MiniCssExtractPlugin.loader,
-                options: {
-                  esModule: false,
-                },
-              },
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              esModule: false,
+            },
+          },
           "css-loader",
           "sass-loader",
         ],
