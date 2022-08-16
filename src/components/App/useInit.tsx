@@ -60,6 +60,7 @@ export const useInit: () => UseInitType = () => {
           });
 
           const data: InitApiData = await res.json();
+          // if the cuid has changed, we change it
           if (cuid !== data.result.cuid)
             localStorage.setItem("cuid", data.result.cuid);
 
