@@ -7,7 +7,7 @@ import { useMessages } from "../Widget/MessagesArea/useMessages";
 export const ResetButton = React.memo(() => {
   const { setMessages } = useMessages();
 
-  const resetDialog = async () => {
+  const resetDialog = () => {
     localStorage.clear();
     setMessages([]);
     window.location.reload();
